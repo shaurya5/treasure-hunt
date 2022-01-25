@@ -1,9 +1,10 @@
 import React from 'react';
+import styles from './styles/finalpage.module.css';
 
 function FinalPage() {
   return (
-    <div>
-      <h1>Congratulations on successfully decoding all the images</h1>
+    <div className={styles.wrapper}>
+      <h1 className={styles.heading}>Congratulations on completing the challenge!</h1>
     </div>
   );
 }

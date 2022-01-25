@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Ubuntu+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.landing {
+  background-color: #121212;
+  display: flex;
+  align-items: flex-start;
+  height: 50vh;
+  flex-direction: column;
+}
+
+.heading1 {
+  margin-left: 2rem;
+  color: white;
+  word-spacing: 0.5rem;
+  margin-top: 8rem;
+}
+
+.heading2 {
+  margin-left: 2rem;
+  color: white;
+  word-spacing: 0.5rem;
+}
+
+#btn {
+  margin-left: 2rem;
+  height: 3rem;
+  width: 6rem;
+  margin-top: 1.5rem;
+  font-weight: 700;
+}
+
+.rules {
+  color: white;
+  display: flex;
+  height: 50vh;
+  /* justify-content: center; */
+  flex-direction: column;
+  background-color: #121212;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.heading3 {
+  margin-left: 2rem;
+  color: white;
+  word-spacing: 0.5rem;
+  margin-top: 5rem;
+}
