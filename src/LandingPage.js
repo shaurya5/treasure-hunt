@@ -3,28 +3,18 @@ import { useNavigate } from "react-router-dom";
 import styles from "./styles/landingpage.module.css";
 import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.css";
-import { supabase } from "./supabase";
+import { pages } from './constants';
 
 function LandingPage() {
   const navigate = useNavigate();
   const [ inputValue, setInputValue ] = useState("");
   const [ time, setTime ] = useState("");
 
-  const createSong = async () => {
-    await supabase
-      .from("data")
-      .insert([
-        {name: inputValue, time_started: time} 
-      ])
-      .single();
-  }
-
   function handleClick() {
     const today = new Date();
     const timeNow = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    setTime(timeNow);
-    createSong();
-    navigate("/start");
+    localStorage.setItem('time_started', timeNow);
+    navigate("/chess");
   }
 
   function updateInputValue(e) {
@@ -34,10 +24,11 @@ function LandingPage() {
 
   return (
     <div className={styles.wrapper}>
+      {/* {console.log(pages)} */}
       <div className={styles.landing}>
         <h1 className={styles.heading1}>Welcome</h1>
         <h1 className={styles.heading2}>Click on the button to start</h1>
-        <Button variant="outline-danger" id={styles.btn} onClick={handleClick}>
+        <Button variant="danger" id={styles.btn} onClick={handleClick}>
           Enter
         </Button>
       </div>
@@ -59,18 +50,13 @@ function LandingPage() {
           </li>
         </ol>
       </div>
-      <div>
+      {/* <div>
         <input
           type="text"
           placeholder="name"
           onChange={(e) => updateInputValue(e)}
         />
-      </div>
-      {/* <img src={require('./images/1.jpg')} useMap='#workspace' />
-
-      <map name='workspace'>
-        <area shape='rectangle' coords='34,44,270,350' href='https://www.amazon.in' />
-      </map> */}
+      </div> */}
     </div>
   );
 }

@@ -2,18 +2,11 @@ import React, { useState } from "react";
 import styles from "./styles/main.module.css";
 import Overlay from "react-bootstrap/Overlay";
 import "bootstrap/dist/css/bootstrap.css";
-import {
-  OverlayTrigger,
-  PopoverBody,
-  PopoverHeader,
-  Button,
-} from "react-bootstrap";
-import { Popover } from "bootstrap";
-import { Tooltip } from "bootstrap";
 
 function Main(props) {
   // const navigate = useNavigate();
   const [score, setScore] = useState(0);
+
   // const data = [
   //   {
   //     url: '1',
@@ -56,9 +49,6 @@ function Main(props) {
 
   return (
     <div className={styles.wrapper}>
-      {/* <img className={styles.image} src={require("./images/" + props.value + ".jpg")} /> */}
-      {/* 
-      <button onClick={validateAns}>Submit</button> */}
       <div className={styles.rules}>
         <p className={styles.head}>RULES</p>
         <ol className={styles.list}>
@@ -73,12 +63,15 @@ function Main(props) {
         </ol>
       </div>
       <div className={styles.header}>
-        <h1 className={styles.heading}>{`Question ${props.value}`}</h1>
-      </div>
-      <div className={styles.linkDiv}>
+        <h1 className={styles.heading}>
+          {props.content}
+        </h1>
         <a className={styles.link} href={props.url}>
           Click here to download the image
         </a>
+      </div>
+      <div className={styles.linkDiv}>
+        
       </div>
     </div>
   );

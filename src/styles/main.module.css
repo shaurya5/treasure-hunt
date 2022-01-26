@@ -25,19 +25,26 @@
 }
 
 .link {
-  margin-top: 0;
+  margin-top: 2rem;
+  font-size: 2rem;
 }
 
 .header {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  height: 10vh;
+  height: 30vh;
+  width: 70vh;
+  margin-top: 5rem;
+  text-align: center;
 }
 
 .heading {
   margin-top: 0;
   margin-bottom: 0;
   color: white;
+  font-size: 1.7rem;
 }
 
 .rules {
@@ -51,6 +58,7 @@
   top: 1rem;
 }
 
+
 .head {
   color: white;
 }
@@ -58,4 +66,40 @@
 .list {
   color: rgb(211, 203, 203);
   font-size: small;
+}
+
+@media only screen and (max-width: 1400px){
+  .heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .header {
+    width: 50vh;
+    margin-top: 5vh;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .header {
+    width: 40vh;
+    margin-top: 20vh;
+  }
+
+  .heading {
+    font-size: 1rem;
+  }
+
+  .list {
+    font-size: 10px;
+  }
+
+  .link {
+    font-size: 1.5rem;
+  }
 }
