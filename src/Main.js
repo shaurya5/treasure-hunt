@@ -57,11 +57,7 @@ function Main(props) {
   return (
     <div className={styles.wrapper}>
       {/* <img className={styles.image} src={require("./images/" + props.value + ".jpg")} /> */}
-      {/* <input
-        type="text"
-        placeholder="answer"
-        onChange={(e) => updateInputValue(e)}
-      />
+      {/* 
       <button onClick={validateAns}>Submit</button> */}
       <div className={styles.rules}>
         <p className={styles.head}>RULES</p>
