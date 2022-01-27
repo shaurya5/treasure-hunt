@@ -60,7 +60,7 @@
   flex-direction: column;
   color: white;
   position: absolute;
-  top: 5rem;
+  top: 9rem;
   right: 10rem;
 }
 
@@ -68,9 +68,10 @@
   height: 3rem;
   width: 20rem;
   margin-top: 1rem;
-  background-color: white;
+  background-color: rgb(228, 213, 213);
   border: none;
   outline: none;
+  font-size: large;
 }
 
 @keyframes fadeInAnimation {
@@ -92,4 +93,25 @@
   color: white;
   word-spacing: 0.5rem;
   margin-top: 5rem;
+}
+
+@media only screen and (max-width: 1300px){
+  .info {
+    top: 21.5rem;
+  }
+}
+@media only screen and (max-width: 510px){
+  .info {
+    /* position: absolute; */
+    /* right: 0; */
+  }
+  
+  .input {
+    height: 2rem; 
+    width: 12rem;
+  }
+
+  .rules {
+    margin-top: 5rem;
+  }
 }

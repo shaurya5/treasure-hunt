@@ -7,7 +7,7 @@
   background-color: #121212;
   height: 100vh;
   width: 100%;
-  /* background-image: url(../images/treasure-chest.jpg); */
+  background-image: url(../images/treasure-chest.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -16,15 +16,60 @@
   background-position: center;
   color: white;
   display: flex;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .heading {
   height: min-content;
   background: transparent;
-  margin: 25vh 10vh 100vh 90vh;
-  
+  position: absolute;
+  right: 25vh;
+  top: 25vh;
+  font-size: 2.5vw;
 }
 
 .btn {
-  
+  height: 7vh;
+  width: 15vw;
+  background-color: red;
+  color: white;
+  position: absolute;
+  top: 50vh;
+  right: 50vh;
+  border-radius: 10vh;
+  border: 1px solid white;
+  outline: none;
+  font-size: 2.2vw;
+}
+
+.btn:hover {
+  background-color: rgb(180, 9, 9);
+}
+
+@media only screen and (max-width: 1200px) {
+  .heading {
+    top: 30vh;
+  }
+
+  .btn {
+    right: 30vh;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .heading {
+    top: 35vh;
+    right: 10vh;
+  }
 }

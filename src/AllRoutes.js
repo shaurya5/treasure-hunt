@@ -37,7 +37,7 @@ function AllRoutes() {
       component: (
         <Main
           value="1"
-          url="https://res.cloudinary.com/douppfjs1/image/upload/fl_attachment/v1643134470/1_qw6nel.jpg"
+          url="https://res.cloudinary.com/douppfjs1/image/upload/fl_attachment/v1643274937/first_ifzoz7.png"
           content={<Fragment>Vision takes a look around him. Tall warrior figures are standing on a checkered field. 
           These majestic figures showed him the glory of BPHC, and it made him find the treasure even more.
           First, help Vision free himself from the shackles. Vision found a knife near him. But the blade is blunt. 
@@ -46,11 +46,11 @@ function AllRoutes() {
       ),
     },
     {
-      path: "/nano",
+      path: "/Acadblock953",
       component: (
         <Main 
           value="2"
-          url=""
+          url="https://res.cloudinary.com/douppfjs1/image/upload/fl_attachment/v1643274938/second_c0t7wl.png"
           content={<Fragment>Hooray!!! Vision is now free. He resumes his journey once again. 
             With newfound determination, he heads towards the place of learning. 
             The place where knowledge is spread, and the world’s secrets are revealed. 
@@ -62,7 +62,7 @@ function AllRoutes() {
       ),
     },
     {
-      path: "/q3",
+      path: "/Waterfall478",
       component: (
         <Main 
           value="3" 
@@ -80,11 +80,11 @@ function AllRoutes() {
       ),
     },
     {
-      path: "/2",
+      path: "/Pool7",
       component: (
         <Main 
           value="4"
-          url=""
+          url="https://res.cloudinary.com/douppfjs1/image/upload/fl_attachment/v1643274935/fourth_pjvfba.png"
           content={<Fragment>Incredible, you have found the treasure location. But wait! What is this? 
           Vision is looking everywhere, but it’s not there! But, you are sure that it’s the location.
           Help Vision. His Senses are getting rusty and dull. 
@@ -92,16 +92,12 @@ function AllRoutes() {
           />
       ),
     },
-    // {
-    //   path: "/q5",
-    //   component: <Main value="5" />,
-    // },
     {
-      path: "/success",
+      path: "/Magic57",
       component: <FinalPage />,
     },
     {
-      path: "/end",
+      path: "/end-event21",
       component: <Ending />
     },
     {

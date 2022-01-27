@@ -44,7 +44,7 @@
   margin-top: 0;
   margin-bottom: 0;
   color: white;
-  font-size: 1.7rem;
+  font-size: 2vw;
 }
 
 .rules {
@@ -70,7 +70,7 @@
 
 @media only screen and (max-width: 1400px){
   .heading {
-    font-size: 1.5rem;
+    /* font-size: 1.5vw; */
   }
 }
 
@@ -81,7 +81,7 @@
   }
 
   .heading {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
   }
 }
 
@@ -92,7 +92,7 @@
   }
 
   .heading {
-    font-size: 1rem;
+    /* font-size: 1vw; */
   }
 
   .list {

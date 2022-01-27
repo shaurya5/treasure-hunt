@@ -23,6 +23,7 @@ function LandingPage() {
     else{
       alert('Fill in your details')
     }
+    // navigate('/chess')
   }
 
   function updateNameValue(e) {
@@ -58,12 +59,14 @@ function LandingPage() {
           </li>
           <li style={{ color: "#fcdf03" }}>
             Clicking the above button starts the timer. As soon as you finish
-            all the challenges, click the button on the final page to stop the
-            timer.
+            all the challenges, click the button on the final page as soon as you get there to stop the
+            timer. Your participation won't be considered if you don't click on 
+            any of these two buttons.
           </li>
         </ol>
       </div>
       <div className={styles.info}>
+        <h1>Your Info</h1>
         <input
           className={styles.input}
           type="text"

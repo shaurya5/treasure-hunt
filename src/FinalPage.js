@@ -21,7 +21,7 @@ function FinalPage() {
   }
 
   function redirect() {
-    navigate('/end');
+    navigate('/end-event21');
   }
 
   // useEffect(() => {
@@ -49,7 +49,7 @@ function FinalPage() {
     localStorage.removeItem('time_started');
     localStorage.removeItem('time_ended');
     
-    navigate('/end')
+    navigate('/end-event21')
   }
   return (
     <div className={styles.wrapper}>
