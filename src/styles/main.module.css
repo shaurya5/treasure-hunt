@@ -35,7 +35,7 @@
   align-items: center;
   justify-content: center;
   height: 30vh;
-  width: 70vh;
+  width: 100vh;
   margin-top: 5rem;
   text-align: center;
 }
@@ -44,7 +44,7 @@
   margin-top: 0;
   margin-bottom: 0;
   color: white;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 .rules {
@@ -68,20 +68,23 @@
   font-size: small;
 }
 
-@media only screen and (max-width: 1400px){
+@media only screen and (max-width: 1500px){
   .heading {
     /* font-size: 1.5vw; */
   }
 
+  .header {
+    margin-top: 25vh;
+  }
   .rules {
     width: 30rem;
   }
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width:970px){
   .header {
     width: 50vh;
-    margin-top: 5vh;
+    margin-top: 20vh;
   }
 
   .heading {
