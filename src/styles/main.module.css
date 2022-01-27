@@ -72,6 +72,10 @@
   .heading {
     /* font-size: 1.5vw; */
   }
+
+  .rules {
+    width: 30rem;
+  }
 }
 
 @media only screen and (max-width: 800px){
@@ -85,14 +89,14 @@
   }
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 550px){
   .header {
     width: 40vh;
-    margin-top: 20vh;
+    margin-top: 40vh;
   }
 
   .heading {
-    /* font-size: 1vw; */
+    font-size: 4vw;
   }
 
   .list {
@@ -100,6 +104,10 @@
   }
 
   .link {
-    font-size: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .rules {
+    width: 40vh;
   }
 }

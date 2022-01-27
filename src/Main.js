@@ -7,29 +7,6 @@ function Main(props) {
   // const navigate = useNavigate();
   const [score, setScore] = useState(0);
 
-  // const data = [
-  //   {
-  //     url: '1',
-  //     value: "data",
-  //   },
-  //   {
-  //     url: '2',
-  //     value: "data",
-  //   },
-  //   {
-  //     url: '3',
-  //     value: "data",
-  //   },
-  //   {
-  //     url: '4',
-  //     value: "data",
-  //   },
-  //   {
-  //     url: '5',
-  //     value: "data",
-  //   },
-  // ];
-
   // function updateInputValue(e) {
   //   const val = e.target.value;
   //   setInputValue(val);
@@ -46,7 +23,7 @@ function Main(props) {
   // }
 
   // const [inputValue, setInputValue] = useState("");
-
+  
   return (
     <div className={styles.wrapper}>
       <div className={styles.rules}>
@@ -60,19 +37,21 @@ function Main(props) {
             Suppose your answer is 'horse'. Change the url to abc.com/horse to
             proceed to the next question.
           </li>
+          <li style={{ color: "#fcdf03" }}>
+            Clicking the above button starts the timer. As soon as you finish
+            all the challenges, click the button on the final page as soon as
+            you get there to stop the timer. Your participation won't be
+            considered if you don't click on any of these two buttons.
+          </li>
         </ol>
       </div>
       <div className={styles.header}>
-        <h1 className={styles.heading}>
-          {props.content}
-        </h1>
+        <h1 className={styles.heading}>{props.content}</h1>
         <a className={styles.link} href={props.url}>
           Click here to download the image
         </a>
       </div>
-      <div className={styles.linkDiv}>
-        
-      </div>
+      <div className={styles.linkDiv}></div>
     </div>
   );
 }
