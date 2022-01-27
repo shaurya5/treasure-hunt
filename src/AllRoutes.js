@@ -82,7 +82,7 @@ function AllRoutes() {
       path: "/Waterfall478",
       component: (
         <Main
-          value="3"
+          value="3" 
           url="https://res.cloudinary.com/douppfjs1/image/upload/fl_attachment/v1643309057/third_cv5eq4.png"
           content={
             <Fragment>
