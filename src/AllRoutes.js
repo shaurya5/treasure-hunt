@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  useLocation,
+  useLocation
 } from "react-router-dom";
 import Main from "./Main";
 import FinalPage from "./FinalPage";
@@ -28,10 +28,7 @@ import Ending from "./Ending";
 // }
 
 function AllRoutes() {
-  // useEffect(() => {
-  //   updatePath()
-  // }, []);
-
+  
   const pages = [
     {
       path: "/",
