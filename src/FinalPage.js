@@ -24,20 +24,37 @@ function FinalPage() {
     navigate('/end');
   }
 
-  useEffect(() => {
-    updateDB();
-    redirect();
-  },[]);
+  // useEffect(() => {
+  //   updateDB();
+  //   redirect();
+  // },[]);
 
-  function handleClick() {
+  async function handleClick() {
     const today = new Date();
     const timeNow = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     localStorage.setItem("time_ended", timeNow);
+    var timeEnded = localStorage.getItem('time_ended');
+    var timeStarted = localStorage.getItem('time_started');
+    var username = localStorage.getItem('name');  
+    var idNo = localStorage.getItem('ID');
+
+    await supabase
+      .from('data')
+      .insert([
+        { name: username, time_started: timeStarted, time_ended: timeEnded, id: idNo}  
+      ])
+      .single();
+    localStorage.removeItem('name');
+    localStorage.removeItem('ID');
+    localStorage.removeItem('time_started');
+    localStorage.removeItem('time_ended');
+    
+    navigate('/end')
   }
   return (
     <div className={styles.wrapper}>
       <h1 className={styles.heading}>Bravo! You have found the treasure!</h1>
-      <button onClick={handleClick}>Stop Timer</button>
+      <button className={styles.btn} onClick={handleClick}>Stop Timer</button>
     </div>
   );
 }
