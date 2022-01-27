@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Ubuntu+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Ubuntu+Mono&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   background-color: #121212;
 }
 
@@ -53,16 +53,33 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+}
 
+.info {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+  top: 5rem;
+  right: 10rem;
+}
+
+.input {
+  height: 3rem;
+  width: 20rem;
+  margin-top: 1rem;
+  background-color: white;
+  border: none;
+  outline: none;
 }
 
 @keyframes fadeInAnimation {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
-   }
+    opacity: 1;
+  }
 }
 
 .list {

@@ -4,6 +4,8 @@ import Main from "./Main";
 import FinalPage from "./FinalPage";
 import LandingPage from "./LandingPage";
 import Error from "./Error";
+import Ending from "./Ending";
+
 // import { pages } from './constants';
 
 // function updatePath() {
@@ -90,13 +92,17 @@ function AllRoutes() {
           />
       ),
     },
-    {
-      path: "/q5",
-      component: <Main value="5" />,
-    },
+    // {
+    //   path: "/q5",
+    //   component: <Main value="5" />,
+    // },
     {
       path: "/success",
       component: <FinalPage />,
+    },
+    {
+      path: "/end",
+      component: <Ending />
     },
     {
       path: "/*",

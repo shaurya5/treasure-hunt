@@ -6,12 +6,21 @@
 .wrapper {
   background-color: #121212;
   height: 100vh;
+  width: 100%;
+  /* background-image: url(../images/treasure-chest.jpg); */
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
   color: white;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .heading {
-  text-align: center;
+  height: min-content;
+  background: transparent;
+  margin: 25vh 10vh 100vh 90vh;
+  
 }

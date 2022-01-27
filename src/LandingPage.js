@@ -3,23 +3,36 @@ import { useNavigate } from "react-router-dom";
 import styles from "./styles/landingpage.module.css";
 import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.css";
-import { pages } from './constants';
+import { pages } from "./constants";
 
 function LandingPage() {
   const navigate = useNavigate();
-  const [ inputValue, setInputValue ] = useState("");
-  const [ time, setTime ] = useState("");
+  const [inputName, setInputName] = useState();
+  const [inputID, setInputID] = useState();
+  const [time, setTime] = useState("");
 
   function handleClick() {
     const today = new Date();
     const timeNow = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    localStorage.setItem('time_started', timeNow);
-    navigate("/chess");
+    localStorage.setItem("time_started", timeNow);
+    localStorage.setItem("name", inputName);
+    localStorage.setItem('ID', inputID);
+    if(inputID && inputName && timeNow){
+      navigate("/chess");
+    }
+    else{
+      alert('Fill in your details')
+    }
   }
 
-  function updateInputValue(e) {
-    const val = e.target.value;
-    setInputValue(val);
+  function updateNameValue(e) {
+    const name = e.target.value;
+    setInputName(name);
+  }
+
+  function updateIDValue(e) {
+    const id = e.target.value;
+    setInputID(id);
   }
 
   return (
@@ -50,14 +63,22 @@ function LandingPage() {
           </li>
         </ol>
       </div>
-      {/* <div>
+      <div className={styles.info}>
         <input
+          className={styles.input}
           type="text"
-          placeholder="name"
-          onChange={(e) => updateInputValue(e)}
+          placeholder="Name"
+          onChange={(e) => updateNameValue(e)}
         />
-      </div> */}
+        <input
+          className={styles.input}
+          type="text"
+          placeholder="ID"
+          onChange={(e) => updateIDValue(e)}
+        />
+      </div>
     </div>
+    
   );
 }
 
