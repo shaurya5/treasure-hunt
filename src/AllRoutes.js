@@ -142,11 +142,11 @@ function AllRoutes() {
     },
   ];
 
-  const location = useLocation();
-  localStorage.setItem("score", 0);
-  useEffect(() => {
-    console.log("");
-  }, [location]);
+  // const location = useLocation();
+  // localStorage.setItem("score", 0);
+  // useEffect(() => {
+  //   console.log("");
+  // }, [location]);
 
   return (
     <Router>
