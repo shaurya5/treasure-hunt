@@ -13,15 +13,15 @@ function LandingPage() {
 
   function handleClick() {
     const today = new Date();
-    const timeNow = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    const timeNow =
+      today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     localStorage.setItem("time_started", timeNow);
     localStorage.setItem("name", inputName);
-    localStorage.setItem('ID', inputID);
-    if(inputID && inputName && timeNow){
+    localStorage.setItem("ID", inputID);
+    if (inputID && inputName && timeNow) {
       navigate("/chess");
-    }
-    else{
-      alert('Fill in your details')
+    } else {
+      alert("Fill in your details");
     }
     // navigate('/chess')
   }
@@ -59,9 +59,9 @@ function LandingPage() {
           </li>
           <li style={{ color: "#fcdf03" }}>
             Clicking the above button starts the timer. As soon as you finish
-            all the challenges, click the button on the final page as soon as you get there to stop the
-            timer. Your participation won't be considered if you don't click on 
-            any of these two buttons.
+            all the challenges, click the button on the final page as soon as
+            you get there to stop the timer. Your participation won't be
+            considered if you don't click on any of these two buttons.
           </li>
         </ol>
       </div>
@@ -70,7 +70,7 @@ function LandingPage() {
         <input
           className={styles.input}
           type="text"
-          placeholder="Name"
+          placeholder="Full Name"
           onChange={(e) => updateNameValue(e)}
         />
         <input
@@ -79,9 +79,14 @@ function LandingPage() {
           placeholder="ID"
           onChange={(e) => updateIDValue(e)}
         />
+        <div className={styles.valid}>
+          <p>
+            Enter your full name and ID correctly. Submissions with wrong IDs
+            won't be considered valid.
+          </p>
+        </div>
       </div>
     </div>
-    
   );
 }
 

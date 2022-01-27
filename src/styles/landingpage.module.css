@@ -42,12 +42,14 @@
 .rules {
   color: white;
   display: flex;
-  height: 50vh;
+  height: 10vh;
+  width: 65vw;
   /* justify-content: center; */
   flex-direction: column;
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  margin-top: 10vh;
 }
 
 .wrapper {
@@ -72,6 +74,7 @@
   border: none;
   outline: none;
   font-size: large;
+  padding: 5px;
 }
 
 @keyframes fadeInAnimation {
@@ -95,6 +98,11 @@
   margin-top: 5rem;
 }
 
+.valid {
+  width: 20rem;
+  margin-top: 1vh;
+}
+
 @media only screen and (max-width: 1300px){
   .info {
     top: 21.5rem;
@@ -112,6 +120,10 @@
   }
 
   .rules {
-    margin-top: 5rem;
+    margin-top: 10rem;
+  }
+
+  .valid {
+    width: 12rem;
   }
 }

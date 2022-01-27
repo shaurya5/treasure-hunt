@@ -38,10 +38,9 @@ function Main(props) {
             proceed to the next question.
           </li>
           <li style={{ color: "#fcdf03" }}>
-            Clicking the above button starts the timer. As soon as you finish
-            all the challenges, click the button on the final page as soon as
-            you get there to stop the timer. Your participation won't be
-            considered if you don't click on any of these two buttons.
+            Click the button on the final page as soon as
+            you get there to stop the timer. Your submission won't be
+            considered if you don't click on it.
           </li>
         </ol>
       </div>

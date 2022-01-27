@@ -83,7 +83,7 @@ function AllRoutes() {
       component: (
         <Main
           value="3"
-          url=""
+          url="https://res.cloudinary.com/douppfjs1/image/upload/fl_attachment/v1643309057/third_cv5eq4.png"
           content={
             <Fragment>
               Hiya! With his first obstacle cleared, Vision moves forward with
