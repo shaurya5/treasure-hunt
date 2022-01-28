@@ -112,5 +112,6 @@
 
   .rules {
     width: 40vh;
+    height: fit-content;
   }
 }

@@ -13,6 +13,7 @@
   align-items: flex-start;
   height: 50vh;
   flex-direction: column;
+  margin-top: -5vh;
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -62,7 +63,7 @@
   flex-direction: column;
   color: white;
   position: absolute;
-  top: 9rem;
+  top: 7rem;
   right: 10rem;
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
