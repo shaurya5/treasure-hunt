@@ -109,13 +109,14 @@
 
 @media only screen and (max-width: 1300px){
   .info {
-    top: 21.5rem;
+    top: 13.5rem;
   }
 }
-@media only screen and (max-width: 510px){
+@media only screen and (max-width: 640px){
   .info {
     /* position: absolute; */
     /* right: 0; */
+    top: 20rem;
   }
   
   .input {
@@ -124,7 +125,8 @@
   }
 
   .rules {
-    margin-top: 10rem;
+    margin-top: 15rem;
+    width: 90%;
   }
 
   .valid {
