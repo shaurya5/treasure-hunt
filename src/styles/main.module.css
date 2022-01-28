@@ -49,11 +49,12 @@
 
 .rules {
   width: 20rem;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
   position: absolute;
+  align-items: flex-end;
   right: 2rem;
   top: 1rem;  
 }
@@ -68,9 +69,12 @@
   font-size: small;
 }
 
+.btnRules {
+  
+}
 @media only screen and (max-width: 1500px){
   .heading {
-    /* font-size: 1.5vw; */
+    font-size: 1.5vw;
   }
 
   .header {
@@ -95,7 +99,7 @@
 @media only screen and (max-width: 550px){
   .header {
     width: 40vh;
-    margin-top: 40vh;
+    /* margin-top: 40vh; */
   }
 
   .heading {

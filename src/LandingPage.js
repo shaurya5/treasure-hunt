@@ -54,7 +54,7 @@ function LandingPage() {
             You have to decode the image using OpenCV and find out the answer.
           </li>
           <li>
-            Suppose your answer is 'horse'. Change the url to abc.com/horse to
+            Suppose your answer is 'horse'. Change the url to <strong>treasure-hunt-techweek.netlify.app/horse</strong> to
             proceed to the next question.
           </li>
           <li style={{ color: "#fcdf03" }}>
