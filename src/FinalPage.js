@@ -28,7 +28,7 @@ function FinalPage() {
   //   updateDB();
   //   redirect();
   // },[]);
-
+  
   async function handleClick() {
     const today = new Date();
     const timeNow = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();

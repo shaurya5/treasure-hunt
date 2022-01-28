@@ -36,11 +36,6 @@ function Main(props) {
   // }
 
   // const [inputValue, setInputValue] = useState("");
-  const renderTooltip = (props) => (
-    <Tooltip id="button-tooltip" {...props}>
-      Simple tooltip
-    </Tooltip>
-  );
 
   return (
     <div className={styles.wrapper}>
@@ -78,7 +73,7 @@ function Main(props) {
           container={ref}
           containerPadding={20}
         >
-          <Popover id="popover-contained">
+          <Popover style={{border: '1px solid white', borderRadius: '0'}} id="popover-contained">
             <Popover.Header as="h3">Rules</Popover.Header>
             <Popover.Body>
               <ol className={styles.list}>
