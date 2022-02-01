@@ -99,7 +99,7 @@
 @media only screen and (max-width: 550px){
   .header {
     width: 40vh;
-    /* margin-top: 40vh; */
+    margin-top: 40vh;
   }
 
   .heading {

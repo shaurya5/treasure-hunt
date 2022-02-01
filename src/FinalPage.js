@@ -44,6 +44,7 @@ function FinalPage() {
         { name: username, time_started: timeStarted, time_ended: timeEnded, id: idNo }  
       ])
       .single();
+    
     localStorage.removeItem('name');
     localStorage.removeItem('ID');
     localStorage.removeItem('time_started');

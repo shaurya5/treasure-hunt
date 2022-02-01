@@ -13,9 +13,7 @@ function Ending(props) {
         fontSize: "3vw",
       }}
     >
-
       Thank You
-
     </div>
   );
 }

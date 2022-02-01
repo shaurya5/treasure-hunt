@@ -8,6 +8,7 @@ import {
   Overlay,
 } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
+import { supabase } from "./supabase";
 
 function Main(props) {
   // const navigate = useNavigate();
@@ -16,7 +17,7 @@ function Main(props) {
   const [target, setTarget] = useState(null);
   const ref = useRef(null);
 
-  const handleClick = (event) => {
+  function handleClick(event) {
     setShow(!show);
     setTarget(event.target);
   };

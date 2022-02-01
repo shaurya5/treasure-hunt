@@ -100,7 +100,10 @@ function AllRoutes() {
                 Three Thresholds
               </p>{" "}
               the Tree take thou towards the treasure,{" "}
-              <p style={{ color: "yellow", display: "inline" }}>3</p>”
+              <p style={{ color: "yellow", display: "inline" }}>3</p>,
+              <p style={{ color: "red", display: 'inline'}}>r</p>,
+              <p style={{ color: "green", display: 'inline'}}>g</p>,
+              <p style={{ color: "blue", display: 'inline'}}>b</p>”
             </Fragment>
           }
         />

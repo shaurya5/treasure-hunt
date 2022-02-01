@@ -4,6 +4,7 @@ import styles from "./styles/landingpage.module.css";
 import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.css";
 import { pages } from "./constants";
+import { supabase } from './supabase';
 
 function LandingPage() {
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ function LandingPage() {
   const [inputID, setInputID] = useState();
   const [time, setTime] = useState("");
 
-  function handleClick() {
+  async function handleClick() {
     const today = new Date();
     const timeNow =
       today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
@@ -20,6 +21,12 @@ function LandingPage() {
     localStorage.setItem("ID", inputID);
     if (inputID && inputName && timeNow) {
       navigate("/chess");
+      await supabase
+      .from('data-all')
+      .insert([
+        { name: inputName, time_started: timeNow, id: inputID }  
+      ])
+      .single();
     } else {
       alert("Fill in your details");
     }
