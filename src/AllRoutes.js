@@ -35,7 +35,7 @@ function AllRoutes() {
       component: <LandingPage />,
     },
     {
-      path: "/chess",
+      path: "/chess91",
       component: (
         <Main
           value="1"

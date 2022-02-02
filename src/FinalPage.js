@@ -15,7 +15,7 @@ function FinalPage() {
     await supabase
       .from('data')
       .insert([
-        { name: username, time_started: timeStarted, time_ended: timeEnded, id: idNo}  
+        { name: username, time_started: timeStarted, time_ended: timeEnded, id: idNo }  
       ])
       .single();
   }
