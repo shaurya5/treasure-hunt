@@ -32,6 +32,7 @@ function FinalPage() {
   async function handleClick() {
     const today = new Date();
     const timeNow = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    const date = today.getDate() + "-" + today.getMonth() + "-" + today.getFullYear();
     localStorage.setItem("time_ended", timeNow);
     var timeEnded = localStorage.getItem('time_ended');
     var timeStarted = localStorage.getItem('time_started');
@@ -41,7 +42,7 @@ function FinalPage() {
     await supabase
       .from('data')
       .insert([
-        { name: username, time_started: timeStarted, time_ended: timeEnded, id: idNo }  
+        { name: username, date: date, time_started: timeStarted, time_ended: timeEnded, id: idNo }  
       ])
       .single();
     

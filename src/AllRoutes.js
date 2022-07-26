@@ -3,29 +3,12 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  useLocation
 } from "react-router-dom";
 import Main from "./Main";
 import FinalPage from "./FinalPage";
 import LandingPage from "./LandingPage";
 import Error from "./Error";
 import Ending from "./Ending";
-
-// import { pages } from './constants';
-
-// function updatePath() {
-//   pages.map((page,index) => {
-//     switch(index) {
-//       case 0:
-//         page.value['path']='/start';
-//         break;
-
-//       default:
-//         page.value['path'] = '/' + pages[index-1].value.answer;
-//         break;
-//     }
-//   })
-// }
 
 function AllRoutes() {
   
@@ -142,12 +125,6 @@ function AllRoutes() {
     },
   ];
 
-  // const location = useLocation();
-  // localStorage.setItem("score", 0);
-  // useEffect(() => {
-  //   console.log("");
-  // }, [location]);
-
   return (
     <Router>
       <Routes>
@@ -159,5 +136,4 @@ function AllRoutes() {
   );
 }
 
-// export { pages };
 export default AllRoutes;
