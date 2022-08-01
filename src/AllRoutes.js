@@ -46,7 +46,7 @@ function AllRoutes() {
       component: (
         <Main
           value="2" 
-          url="https://res.cloudinary.com/douppfjs1/image/upload/fl_attachment/v1659352328/round2_ja6uqp.png"
+          url="https://res.cloudinary.com/douppfjs1/image/upload/fl_attachment/v1659355316/round2_ztsipo.png"
           content={
             <Fragment>
               Hiya! You finally find the place where your date is :){" "}
