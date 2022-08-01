@@ -22,7 +22,7 @@ function AllRoutes() {
       component: (
         <Main
           value="1"
-          url="https://i.ibb.co/KNy3Bsh/round1.jpg"
+          url="https://res.cloudinary.com/douppfjs1/image/upload/fl_attachment/v1659352336/round1_qrmnsf.jpg"
           content={
             <Fragment>
               You look around and find a map lying on the ground, will this map finally help you find a date or not?
@@ -46,7 +46,7 @@ function AllRoutes() {
       component: (
         <Main
           value="2" 
-          url="https://i.ibb.co/3FSV4vJ/round2.png"
+          url="https://res.cloudinary.com/douppfjs1/image/upload/fl_attachment/v1659352328/round2_ja6uqp.png"
           content={
             <Fragment>
               Hiya! You finally find the place where your date is :){" "}
@@ -67,7 +67,7 @@ function AllRoutes() {
       component: (
         <Main
           value="3"
-          url="https://i.ibb.co/5nXzdHT/round3.png"
+          url="https://res.cloudinary.com/douppfjs1/image/upload/fl_attachment/v1659352433/round3_nye2s8.png"
           content={
             <Fragment>
               Hooray!!! Planning a moon light dinner definitely charmed your partner
