@@ -21,14 +21,9 @@ function FinalPage() {
   }
 
   function redirect() {
-    navigate('/end-event21');
+    navigate('/https://www.youtube.com/watch?v=dQw4w9WgXcQ');
   }
 
-  // useEffect(() => {
-  //   updateDB();
-  //   redirect();
-  // },[]);
-  
   async function handleClick() {
     const today = new Date();
     const timeNow = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
@@ -51,7 +46,7 @@ function FinalPage() {
     localStorage.removeItem('time_started');
     localStorage.removeItem('time_ended');
     
-    navigate('/end-event21')
+    navigate('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
   }
   return (
     <div className={styles.wrapper}>
