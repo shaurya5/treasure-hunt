@@ -55,7 +55,9 @@ function FinalPage() {
   }
   return (
     <div className={styles.wrapper}>
-      <h1 className={styles.heading}>Bravo! You have found the treasure!</h1>
+      <h1 className={styles.heading}>Well did your partner say yes or no?
+      <br/>
+      Not gonna lie, that's not upto the story maker to decide</h1>
       <button className={styles.btn} onClick={handleClick}>Stop Timer</button>
     </div>
   );
