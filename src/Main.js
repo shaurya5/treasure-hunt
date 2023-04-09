@@ -26,7 +26,7 @@ function Main(props) {
       <div className={styles.header}>
         <h1 className={styles.heading}>{props.content}</h1>
         <a className={styles.link} href={props.url}>
-          Click here to download the image
+          Click here
         </a>
       </div>
       <div className={styles.rules} ref={ref}>

@@ -18,10 +18,26 @@ function AllRoutes() {
       component: <LandingPage />,
     },
     {
+      path: "/enc0d3d",
+      component: (
+        <Main
+          url="https://drive.google.com/drive/folders/18pz3MmC2b81Iur7ArpRhlllD5-DXdHiE?usp=sharing"
+          content={
+            <Fragment>
+              You seem to be moving in the right direction. She gave you a letter but due to a disk defragmentation issue, that letter was split into multiple files
+              <br />
+              <p style={{ color: "yellow", display: "inline" }}>
+                Try to append all of them and dec0d3 the message &lt;3
+              </p>
+            </Fragment>
+          }
+        />
+      ),
+    },
+    {
       path: "/whatyougonnado",
       component: (
         <Main
-          value="1"
           url="https://res.cloudinary.com/douppfjs1/image/upload/fl_attachment/v1659352336/round1_qrmnsf.jpg"
           content={
             <Fragment>
@@ -45,7 +61,6 @@ function AllRoutes() {
       path: "/nvrgnagivup",
       component: (
         <Main
-          value="2" 
           url="https://res.cloudinary.com/douppfjs1/image/upload/fl_attachment/v1659355316/round2_ztsipo.png"
           content={
             <Fragment>
@@ -66,7 +81,6 @@ function AllRoutes() {
       path: "/mo0nl1t",
       component: (
         <Main
-          value="3"
           url="https://res.cloudinary.com/douppfjs1/image/upload/fl_attachment/v1659352433/round3_nye2s8.png"
           content={
             <Fragment>
