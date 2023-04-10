@@ -18,13 +18,32 @@ function AllRoutes() {
       component: <LandingPage />,
     },
     {
+      path: "/home",
+      component: (
+        <Main
+          url=""
+          content={
+            <Fragment>
+              Okay, so the objective of this game is to impress your partner, assuming you find her/him in the first place. 
+              We hope you enjoy the game, please start the game.
+              <br />
+              You get a link from your crush and you click on it and it's empty. This seems like an elaborate scheme to make you prove your worth.
+              <p style={{ color: "yellow", display: "inline" }}>
+                Inspect it
+              </p>
+            </Fragment>
+          }
+        />
+      ),
+    },
+    {
       path: "/enc0d3d",
       component: (
         <Main
           url="https://drive.google.com/drive/folders/18pz3MmC2b81Iur7ArpRhlllD5-DXdHiE?usp=sharing"
           content={
             <Fragment>
-              You seem to be moving in the right direction. She gave you a letter but due to a disk defragmentation issue, that letter was split into multiple files
+              You seem to be moving in the right direction. You receieve an email but due to a disk defragmentation issue, that email was split into multiple files
               <br />
               <p style={{ color: "yellow", display: "inline" }}>
                 Try to append all of them and dec0d3 the message &lt;3

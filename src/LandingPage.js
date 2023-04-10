@@ -20,7 +20,7 @@ function LandingPage() {
     localStorage.setItem("name", inputName);
     localStorage.setItem("ID", inputID);
     if (inputID && inputName && timeNow) {
-      navigate("/enc0d3d");
+      navigate("/home");
       await supabase
       .from('data-all')
       .insert([
