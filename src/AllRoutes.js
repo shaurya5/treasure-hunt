@@ -112,25 +112,23 @@ function AllRoutes() {
         />
       ),
     },
-    // {
-    //   path: "/Pool7",
-    //   component: (
-    //     <Main
-    //       value="4"
-    //       url="https://res.cloudinary.com/douppfjs1/image/upload/fl_attachment/v1643274935/fourth_pjvfba.png"
-    //       content={
-    //         <Fragment>
-    //           Incredible, you have found the treasure location. But wait! What
-    //           is this? Vision is looking everywhere, but it’s not there! But,
-    //           you are sure that it’s the location. Help Vision. His Senses are
-    //           getting rusty and dull. Help him{" "}
-    //           <p style={{ color: "yellow", display: "inline" }}>sharpen</p>{" "}
-    //           them.
-    //         </Fragment>
-    //       }
-    //     />
-    //   ),
-    // },
+    {
+      path: "/Pool7",
+      component: (
+        <Main
+          value="4"
+          url="https://res.cloudinary.com/douppfjs1/image/upload/fl_attachment/v1643274935/fourth_pjvfba.png"
+          content={
+            <Fragment>
+              Loki has joined the TIME KEEPERS and is investigating the murder of a woman. The woman seems to be of pale complexion and long red hair from Greenwich. She had been found dead in her arpartment, with a deep wound in her neck. The scene was clean, almost too clean, and there were no signs of forced entry.<br />
+              Loki surveyed the room, his eyes scanning the furniture, the walls, and the floor for any clues. Suddenly, his attention was drawn to her laptop running ubuntu with the number 1681483848 typed on it. On talking to her neighbours John found out that this was just the victim's secondary home which she used once in a while, and that they hadn't seen her enter the house or exit it in the last 6 months.<br />
+              The only way to solve the case was to go through the CCTV footage of the previous 6 months, but that's a tedious task and Loki is a lazy man. So he sat and wondered if there was any way to find out the exact date and time of the murder so that he can he can travel back to that time instant and prevent the murder. <br />
+              Help Loki solve the case.
+            </Fragment>
+          }
+        />
+      ),
+    },
     {
       path: "/conf35s",
       component: <FinalPage />,
