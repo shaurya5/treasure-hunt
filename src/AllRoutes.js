@@ -11,7 +11,7 @@ import Error from "./Error";
 import Ending from "./Ending";
 
 function AllRoutes() {
-  
+
   const pages = [
     {
       path: "/",
@@ -24,10 +24,10 @@ function AllRoutes() {
           url=""
           content={
             <Fragment>
-              Okay, so the objective of this game is to impress your partner, assuming you find her/him in the first place. 
+              Okay, so the objective of this game is to impress your partner, assuming you find her/him in the first place.
               We hope you enjoy the game, please start the game.
               <br />
-              You get a link from your crush and you click on it and it's empty. This seems like an elaborate scheme to make you prove your worth.
+              You click on the link sent by your crush, you realize that it leads you to a game where the objective is to impress your partner. You can't help but wonder if this is an elaborate scheme to make you prove your worth.
               <p style={{ color: "yellow", display: "inline" }}>
                 Inspect it
               </p>
@@ -43,10 +43,48 @@ function AllRoutes() {
           url="https://drive.google.com/drive/folders/18pz3MmC2b81Iur7ArpRhlllD5-DXdHiE?usp=sharing"
           content={
             <Fragment>
-              You seem to be moving in the right direction. You receieve an email but due to a disk defragmentation issue, that email was split into multiple files
-              <br />
+              As you play the game, you receive an email with important information. However, due to a disk defragmentation issue, the email was split into multiple files. You begin to wonder if this information will help you finally find a date.<br />
               <p style={{ color: "yellow", display: "inline" }}>
                 Try to append all of them and dec0d3 the message &lt;3
+              </p>
+            </Fragment>
+          }
+        />
+      ),
+    },
+    {
+      path: "/base64",
+      component: (
+        <Main
+          url="https://drive.google.com/file/d/1gTG_kaV_TgHxRAXZFnBpyrhUS4pWnArs/view?usp=share_link"
+          content={
+            <Fragment>
+              Meanwhile, you're still trying to solve the mystery of your friend's death. 
+              The only witness to the "freak accident" is a crazy old coot who uttered only the words "Count them!" when questioned by the police. 
+              Months later, you receive a letter with a piece of paper containing a long string of alphabets and some numbers separated by commas. 
+              The sender provides one clue: "The key is to count"
+
+              <p style={{ color: "yellow", display: "inline" }}>
+              Encoded Message : 3-5-3-5-3-7
+              </p>
+            </Fragment>
+          }
+        />
+      ),
+    },
+    {
+      path: "/ididit",
+      component: (
+        <Main
+          url=""
+          content={
+            <Fragment>
+              You seem to have found a computer's ssh credentials. You get onto your computer and try to decode it. You are greeted with a message.
+              Your curiosity piqued, you investigate and discover that the computer belongs to a victim in a murder case. 
+              The only way to solve the case is to go through six months' worth of CCTV footage, a daunting task. 
+              You wonder if there's a way to travel back in time to prevent the murder. <br />
+              <p style={{ color: "yellow", display: "inline" }}>
+              "Welcome to Ubuntu: 1681483848 :)" 
               </p>
             </Fragment>
           }
@@ -60,8 +98,9 @@ function AllRoutes() {
           url="https://res.cloudinary.com/douppfjs1/image/upload/fl_attachment/v1659352336/round1_qrmnsf.jpg"
           content={
             <Fragment>
-              You look around and find a map lying on the ground, will this map finally help you find a date or not?
-              Well, let's find out shall we?{" "}
+              As luck would have it, you finally figure out the date and check the cc tv footage only to realize the victim had hidden a map. 
+              The map has specific coordinates circled, and you realize that triangulating the location could lead you to your partner. 
+              Will this map finally help you find a date? There's only one way to find out.{" "}
               The map has the following coordinates circled, let's see if you can figure out where your partner is by triangulating the location
               <p style={{ color: "yellow", display: "inline" }}>
                 <br />(75,624,0) -&gt; (21,6624,2) -&gt;
@@ -83,8 +122,9 @@ function AllRoutes() {
           url="https://res.cloudinary.com/douppfjs1/image/upload/fl_attachment/v1659355316/round2_ztsipo.png"
           content={
             <Fragment>
-              Hiya! You finally find the place where your date is :){" "}
-              But let's see if you are able to persuade your partner enough to have dinner with you
+              You finally arrive at the location on the map and find your date waiting for you. 
+              However, persuading your partner to have dinner with you is not an easy task. 
+              You must use all of your charm and wit to win them over
               <br />
               See if you can{" "}
               <p style={{ color: "yellow", display: "inline" }}>
@@ -103,27 +143,11 @@ function AllRoutes() {
           url="https://res.cloudinary.com/douppfjs1/image/upload/fl_attachment/v1659352433/round3_nye2s8.png"
           content={
             <Fragment>
-              Hooray!!! Planning a moon light dinner definitely charmed your partner
-              But let's see if your partner will agree to go out with you before sunrise.{" "}
+              After planning a moonlight dinner, you are ecstatic to discover that your efforts have charmed your partner. 
+              However, there is still one more hurdle to overcome. 
+              Your partner must agree to go out with you before sunrise{" "}
               <p style={{ color: "yellow", display: "inline" }}>Sharpen</p>{" "}
               your mind, and find out if you can convince your partner to go out
-            </Fragment>
-          }
-        />
-      ),
-    },
-    {
-      path: "/Pool7",
-      component: (
-        <Main
-          value="4"
-          url="https://res.cloudinary.com/douppfjs1/image/upload/fl_attachment/v1643274935/fourth_pjvfba.png"
-          content={
-            <Fragment>
-              Loki has joined the TIME KEEPERS and is investigating the murder of a woman. The woman seems to be of pale complexion and long red hair from Greenwich. She had been found dead in her arpartment, with a deep wound in her neck. The scene was clean, almost too clean, and there were no signs of forced entry.<br />
-              Loki surveyed the room, his eyes scanning the furniture, the walls, and the floor for any clues. Suddenly, his attention was drawn to her laptop running ubuntu with the number 1681483848 typed on it. On talking to her neighbours John found out that this was just the victim's secondary home which she used once in a while, and that they hadn't seen her enter the house or exit it in the last 6 months.<br />
-              The only way to solve the case was to go through the CCTV footage of the previous 6 months, but that's a tedious task and Loki is a lazy man. So he sat and wondered if there was any way to find out the exact date and time of the murder so that he can he can travel back to that time instant and prevent the murder. <br />
-              Help Loki solve the case.
             </Fragment>
           }
         />
