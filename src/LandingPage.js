@@ -56,12 +56,13 @@ function LandingPage() {
       <div className={styles.rules}>
         <h1 className={styles.heading3}>RULES</h1>
         <ol className={styles.list}>
-          <li>You will be given an image. Download it.</li>
+          <li>For the Python part, you will be given data in the form of google drive folders. Download them.</li>
+          <li>For the openCV part, you will be given an image. Download it.</li>
           <li>
             You have to decode the image using OpenCV and find out the answer.
           </li>
           <li>
-            Suppose your answer is 'horse'. Change the url to <strong>treasure-hunt-techweek.netlify.app/horse</strong> to
+            Suppose your answer is 'horse'. Change the url to <strong>http://treasure-hunt-blush.vercel.app/horse</strong> to
             proceed to the next question.
           </li>
           <li style={{ color: "#fcdf03" }}>
