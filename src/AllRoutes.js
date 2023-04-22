@@ -24,10 +24,11 @@ function AllRoutes() {
           url=""
           content={
             <Fragment>
-              Okay, so the objective of this game is to crack the case of the murder and find the culprit, assuming you find her/him in the first place.
-              We hope you enjoy the game, please start the game.
+              You are a detective trying to solve a murder case. You have been working on this case 
+              for months, and you are feeling frustrated because you can't seem to find any leads. One 
+              day, you receive an anonymous email inviting you to play a game that promises to help you 
+              crack the case.
               <br />
-              You click on the link sent to your phone, you realize that it leads you to a game. You can't help but wonder if this is an elaborate scheme to make you prove your worth.
               <p style={{ color: "yellow", display: "inline" }}>
                 Inspect it
               </p>
@@ -43,8 +44,7 @@ function AllRoutes() {
           url="https://drive.google.com/drive/folders/18pz3MmC2b81Iur7ArpRhlllD5-DXdHiE?usp=sharing"
           content={
             <Fragment>
-              As you play the game, you receive an email with important information. However, due to a disk defragmentation issue, the email was split into multiple files. You begin to wonder if this information will help you finally find the criminal.<br />
-              <p style={{ color: "yellow", display: "inline" }}>
+              On the home page, you discover that the victim was a wealthy businessman with many enemies. You also learn that the only witness to the crime is a crazy old coot who mumbles something about "counting." You receive a letter with a long string of letters and numbers, and a clue that the key is to count. You must figure out how to decode the message to move on to the next level<p style={{ color: "yellow", display: "inline" }}>
                 Try to append all of them and dec0d3 the message &lt;3
               </p>
             </Fragment>
@@ -59,9 +59,8 @@ function AllRoutes() {
           url="https://drive.google.com/file/d/1gTG_kaV_TgHxRAXZFnBpyrhUS4pWnArs/view?usp=share_link"
           content={
             <Fragment>
-              The only witness to the "freak accident" is a crazy old coot who uttered only the words "Count them!" when questioned by the police. 
-              You receive a letter with a piece of paper containing a long string of alphabets and some numbers separated by commas. 
-              The sender provides one clue: "The key is to count"
+              On the home page, you discover that the victim was a wealthy businessman with many enemies. You also learn that the only witness to the crime is a crazy old coot who mumbles something about "counting." You receive a letter with a long string of letters and numbers, and a clue that the key is to count. You must figure out how to decode the message to move on to the next level.
+
 
               <p style={{ color: "yellow", display: "inline" }}>
               Encoded Message : 3-5-3-5-3-7
@@ -97,9 +96,7 @@ function AllRoutes() {
           url="https://res.cloudinary.com/douppfjs1/image/upload/fl_attachment/v1659352336/round1_qrmnsf.jpg"
           content={
             <Fragment>
-              As luck would have it, you finally figure out the date and check the cc tv footage only to realize the victim had hidden a map. 
-              The map has specific coordinates circled, and you realize that triangulating the location could lead you to your criminal. 
-              Will this map finally help you? There's only one way to find out.{" "}
+              On the home page, you discover that the victim was a wealthy businessman with many enemies. You also learn that the only witness to the crime is a crazy old coot who mumbles something about "counting." You receive a letter with a long string of letters and numbers, and a clue that the key is to count. You must figure out how to decode the message to move on to the next level.{" "}
               The map has the following coordinates circled, let's see if you can figure it out by triangulating the location
               <p style={{ color: "yellow", display: "inline" }}>
                 <br />(75,624,0) -&gt; (21,6624,2) -&gt;
@@ -121,15 +118,15 @@ function AllRoutes() {
           url="https://res.cloudinary.com/douppfjs1/image/upload/fl_attachment/v1659355316/round2_ztsipo.png"
           content={
             <Fragment>
-              You finally arrive at the location on the map and find a witness waiting for you. 
-              However, persuading your witness is not an easy task. 
-              You must use all of your charm and wit to win them over
+             As you progress through the game, you begin to piece together clues and evidence that lead you closer to the truth. You realize that the murder was not a random act of violence, but a calculated and premeditated crime committed by someone with a motive. You must use all your detective skills to uncover the truth and bring the culprit to justice.
+
+
               <br />
               See if you can{" "}
               <p style={{ color: "yellow", display: "inline" }}>
                 channel
               </p>{" "}
-              some ideas to impress them
+              your inner sherlock
             </Fragment>
           }
         />
@@ -142,11 +139,11 @@ function AllRoutes() {
           url="https://res.cloudinary.com/douppfjs1/image/upload/fl_attachment/v1659352433/round3_nye2s8.png"
           content={
             <Fragment>
-              After planning a moonlight dinner, you are ecstatic to discover that your efforts have charmed him. 
+              You are ecstatic to discover that your efforts have charmed him. 
               However, there is still one more hurdle to overcome. 
-              Your partner must agree to tell the story before sunrise{" "}
+              Your partner must agree to the crime{" "}
               <p style={{ color: "yellow", display: "inline" }}>Sharpen</p>{" "}
-              your mind, and find out if you can convince the witness to reveal the criminal
+              your mind, and find out if you can convince him to reveal the criminal
             </Fragment>
           }
         />
