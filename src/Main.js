@@ -50,7 +50,7 @@ function Main(props) {
                 </li>
                 <li>
                   Suppose your answer is 'horse'. Change the url to
-                  <strong> treasure-hunt-techweek.netlify.app/horse</strong> to proceed to the next question.
+                  <strong> treasure-hunt-blush.vercel.app/horse</strong> to proceed to the next question.
                 </li>
                 <li style={{ color: "#fcdf03" }}>
                   Click the button on the final page as soon as you get there to
