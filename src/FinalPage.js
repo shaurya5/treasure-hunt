@@ -45,7 +45,7 @@ function FinalPage() {
     localStorage.removeItem('ID');
     localStorage.removeItem('time_started');
     localStorage.removeItem('time_ended');
-    
+    navigate('end-event21');
     // navigate('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
   }
   return (
@@ -53,9 +53,9 @@ function FinalPage() {
       <h1 className={styles.heading}>Well did your partner say yes or no?
       <br/>
       Not gonna lie, that's not upto the story maker to decide</h1>
-      <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>
+//       <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>
         <button className={styles.btn} onClick={handleClick}>Stop Timer</button>
-      </a>
+//       </a>
     </div>
   );
 }
